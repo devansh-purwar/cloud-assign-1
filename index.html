@@ -1,4 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <style>
+    form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: auto;
+}
+
+form > * {
+  margin: 5px 0;
+  box-sizing: border-box;
+}
+  </style>
+
+  <title>Document</title>
+</head>
+<body>
+  
+  <form id="imageForm">
+    <input id="imageInput" type="file" accept="image/*">
+    <button type="submit">Upload</button>
+  </form>
+
+  <script>
+
+    
 const imageForm = document.querySelector("#imageForm")
 const imageInput = document.querySelector("#imageInput")
 
@@ -29,3 +61,9 @@ imageForm.addEventListener("submit", async event => {
   img.src = imageUrl
   document.body.appendChild(img)
 })
+
+
+  </script>
+
+</body>
+</html>
